@@ -11,7 +11,7 @@
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
           {% for entry in data.discography %}
-          <a href=# class= "dropdown-item">{{entry.title}} </a>
+          <a href="{{entry.slug}}.html" class= "dropdown-item">{{entry.title}} </a>
           {% endfor %}
         </div>
       </li>
@@ -23,7 +23,7 @@
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
           {% for entry in data.members %}
-          <a href=# class= "dropdown-item">{{entry.name}} </a>
+          <a href="{{entry.slug}}.html" class= "dropdown-item">{{entry.name}} </a>
           {% endfor %}
         </div>
       </li>
