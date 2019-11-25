@@ -14,17 +14,6 @@
 </article>
 {% endblock %}
 
-
 {% block story %}
-<article class="container">
-  <div class="row">
-   <div class="col-sm-4 ">
-      <h1>{{ members.title }}</h1>
-      <h2>{{ members.instruments }}</h2>
-      <h3>{{ members.birthplace }}</h3>
-      <h3>{{ members.birthdate }}</h3>
-      <p>{{ <members class="text"></members> }}</p>
-    </div>
-  </div>
-</article>
+{% include "_partials/members.njk" %}
 {% endblock %}

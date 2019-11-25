@@ -1,2 +1,6 @@
 {% extends '_layouts/detail.njk' %}
 {% set members = data.members[4] %}
+
+{% block story %}
+{% include "_partials/members.njk" %}
+{% endblock %}
