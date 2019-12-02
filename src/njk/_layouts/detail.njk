@@ -17,9 +17,11 @@
 {% block story %}
 <article class="container">
   <div class="row">
-    <div class="col-sm-4 left-rail">
-  <h1>{{ members.name }}</h2>
-  <p>{{ members.text }}</p>
+    <div class="col-sm-4">
+    {% for entry in data.memners %}
+  <h1>{{ entry.name }}</h2>
+  <p>{{ entry.text }}</p>
+  {% endfor %}
   </div>
   </div>
 </article>
