@@ -15,5 +15,12 @@
 {% endblock %}
 
 {% block story %}
-{% include "_partials/members.njk" %}
+<article class="container">
+  <div class="row">
+    <div class="col-sm-4 left-rail">
+  <h1>{{ members.name }}</h2>
+  <p>{{ members.text }}</p>
+  </div>
+  </div>
+</article>
 {% endblock %}

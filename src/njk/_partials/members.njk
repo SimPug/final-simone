@@ -1,15 +1,22 @@
+<div class="container">
+
+<div class="row">
+
 {% for entry in data.members %}
-  
-    <article class="container">
-      <div class="row">
-      <div class="col-sm-4 ">
-          <h1>{{ members.title }}</h1>
-          <h2>{{ members.instruments }}</h2>
-          <h3>{{ members.birthplace }}</h3>
-          <h3>{{ members.birthdate }}</h3>
-          <p>{{ <members class="text"></members> }}</p>
-        </div>
+<div class= "col-sm-3">
+   <div class="card mb-4">
+      <img src="img/members/{{ entry.imagebw }}" alt= "{{ entry.name }}" class="img-fluid">
+      <div class="card-body">
+        <h5 class="card-title"> {{ entry.name }} </h5>
+        <p class="card-text">{{ entry.instruments }}</p>
+        <p class="card-text"><small class="text-muted">{{entry.tenure}}</small></p>
       </div>
-    </article>
+    </div>
+  </div>
   
 {% endfor %}
+
+</div>
+</div>
+
+
