@@ -26,11 +26,21 @@
 h1{
   font-family: fantasy;
 }
-h2, p{
+h2,h5,p{
   font-family: 'Courier New', Courier, monospace;
   
 }
 
 footer{
   font-family: 'Times New Roman', Times, serif;
+}
+
+#important{
+  text-shadow: 4px 4px 4px rosybrown;;
+}
+
+
+
+.special-headline{
+  font-family: fantasy;
 }

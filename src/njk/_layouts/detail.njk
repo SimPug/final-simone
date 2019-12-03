@@ -1,28 +1,20 @@
 {% extends '_layouts/base.njk' %}
 
 {% block content %}
-<article class="container">
+<div class="container">
   <div class="row">
     <div class="col-sm-4 left-rail">
-        <img src="img/members/{{members.image}}" alt="">
+        <img src="img/members/{{members.image}}" alt="" class="img-fluid">
     </div>
     <div class="col-sm-8">
-     
+
+     <h1 id="important">{{ members.name }}</h1>
+     <h2>{{ members.instruments }}</h2>
+     <h5>{{ members.birthplace }} </h5>
+      <p>{{ members.text | safe }}</p>  
 
     </div>
   </div>
-</article>
+</div>
 {% endblock %}
 
-{% block story %}
-<article class="container">
-  <div class="row">
-    <div class="col-sm-4">
-    {% for entry in data.memners %}
-  <h1>{{ entry.name }}</h2>
-  <p>{{ entry.text }}</p>
-  {% endfor %}
-  </div>
-  </div>
-</article>
-{% endblock %}
