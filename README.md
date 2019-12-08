@@ -109,7 +109,7 @@ Have a spreadsheet of data that you need to convert to JSON? Try [csvjson.com](h
 It is possible to select a single node or "row" from an array in `data.filename.json` by its position to use in a detail page using the Nunjucks [set](https://mozilla.github.io/nunjucks/templating.html#set) tag. The position order starts at zero, so using the books example above, you could access "The Shipping News" author (and similar properties) like this:
 
 ```html
-{% set book = data.books[1] %}
+{% set book = data.members[1] %}
 <h1>{{ book.title }}</h1> # gets "The Shipping News" in data above
 ```
 
